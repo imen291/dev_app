@@ -1,4 +1,7 @@
-node {
+pipeline {
+        agent any
+
+stages {
 
     stage('Clone') {
       git 'https://github.com/imen291/dev_app.git'
@@ -12,4 +15,5 @@ node {
       sh label: '', script: 'java Example'
     }
 
+}
 }
