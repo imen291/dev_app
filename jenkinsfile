@@ -17,7 +17,7 @@ stages {
 
 }
 
-    stage(‘running the app’) {
+    stage('running the app') {
             steps {
                 sh ‘run.sh'            }
         }
