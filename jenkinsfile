@@ -15,10 +15,12 @@ stages {
       sh label: '', script: 'java Example'
     }
 
+    
+     stage('running the app') {
+            steps {
+                sh 'run.sh'            }
+        }
 }
 
-    stage('running the app') {
-            steps {
-                sh ‘run.sh'            }
-        }
+   
 }
