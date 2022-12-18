@@ -8,7 +8,7 @@ stages {
     }
     
     stage('Build') {
-      steps {s h label: '', script: 'javac Example.java' }
+      steps { sh label: '', script: 'javac Example.java' }
     }
     
     stage('Run') {
