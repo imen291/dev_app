@@ -4,7 +4,7 @@ pipeline {
 stages {
 
     stage('Clone') {
-      git 'https://github.com/imen291/dev_app.git'
+      git 'https://github.com/imen291/devops_app.git'
     }
     
     stage('Build') {
